@@ -1,0 +1,6 @@
+One of the most important features of EJS is its use of partials.
+Using partials, you may write a piece of code just once, and use it at many places as and
+when required.
+
+
+Layouts enable us to dynamically fix content or elements to a page in such a way that even if a different page is requested, the content remains but the page is successfully accessed.

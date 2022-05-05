@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<header class="header"> 
+    <div class="outer">     
+     <i class="fa-brands fa-instagram"></i> Codial
+    </div>
+    <div class="inner">
+        <ul>
+            
+            <% if (locals.user){ %>
+                <li>
+                    <a href="/users/profile">
+                        <%= user.name %>
+                    </a>
+                </li>
+                <li>
+                    <a href="/users/sign-out">Sign Out</a>
+                </li>
+            <% }else{ %>
+            
+             
+                <li>
+                    <a href="/users/sign-in">Sign In</a>
+                </li>
+    
+                <li>
+                    <a href="/users/sign-up">Sign Up</a>
+                </li>
+              
+    
+    
+            <% } %>
+        </ul>
+    </div>
+</header>
